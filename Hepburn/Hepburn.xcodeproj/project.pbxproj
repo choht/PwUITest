@@ -1,0 +1,664 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB2CCA4C25C56EE300916914 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2CCA4B25C56EE300916914 /* Preferences.swift */; };
+		FB3B524825BB1D6400030526 /* HepburnApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3B524725BB1D6400030526 /* HepburnApp.swift */; };
+		FB3B524A25BB1D6400030526 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3B524925BB1D6400030526 /* LoginView.swift */; };
+		FB3B524C25BB1D6500030526 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB3B524B25BB1D6500030526 /* Assets.xcassets */; };
+		FB3B524F25BB1D6500030526 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB3B524E25BB1D6500030526 /* Preview Assets.xcassets */; };
+		FB3B525A25BB1D6500030526 /* HepburnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3B525925BB1D6500030526 /* HepburnTests.swift */; };
+		FB3B526525BB1D6500030526 /* HepburnUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3B526425BB1D6500030526 /* HepburnUITests.swift */; };
+		FB670F7A25C6A0F2000798BF /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB670F7925C6A0F2000798BF /* Network.swift */; };
+		FB96EDAA25BEF94E001F7025 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FB96EDAC25BEF94E001F7025 /* Localizable.strings */; };
+		FB972F4125C18FB30051833F /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB972F4025C18FB30051833F /* AudioRecorder.swift */; };
+		FB972F4625C19F360051833F /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB972F4525C19F360051833F /* AudioPlayer.swift */; };
+		FBB2105225BD3FA900CE94D5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB2105125BD3FA900CE94D5 /* MainView.swift */; };
+		FBF4356925CC1D8B005AD969 /* Talk.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF4356825CC1D8B005AD969 /* Talk.swift */; };
+		FBF4357125CC26FB005AD969 /* Speech.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF4357025CC26FB005AD969 /* Speech.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FB3B525625BB1D6500030526 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB3B523C25BB1D6400030526 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB3B524325BB1D6400030526;
+			remoteInfo = Hepburn;
+		};
+		FB3B526125BB1D6500030526 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB3B523C25BB1D6400030526 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB3B524325BB1D6400030526;
+			remoteInfo = Hepburn;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FB2CCA4B25C56EE300916914 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		FB3B524425BB1D6400030526 /* Hepburn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hepburn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB3B524725BB1D6400030526 /* HepburnApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HepburnApp.swift; sourceTree = "<group>"; };
+		FB3B524925BB1D6400030526 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		FB3B524B25BB1D6500030526 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB3B524E25BB1D6500030526 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FB3B525025BB1D6500030526 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB3B525525BB1D6500030526 /* HepburnTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HepburnTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB3B525925BB1D6500030526 /* HepburnTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HepburnTests.swift; sourceTree = "<group>"; };
+		FB3B525B25BB1D6500030526 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB3B526025BB1D6500030526 /* HepburnUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HepburnUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB3B526425BB1D6500030526 /* HepburnUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HepburnUITests.swift; sourceTree = "<group>"; };
+		FB3B526625BB1D6500030526 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB670F7925C6A0F2000798BF /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		FB96EDAB25BEF94E001F7025 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FB972F4025C18FB30051833F /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
+		FB972F4525C19F360051833F /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		FBB2105125BD3FA900CE94D5 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		FBF4356825CC1D8B005AD969 /* Talk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Talk.swift; sourceTree = "<group>"; };
+		FBF4357025CC26FB005AD969 /* Speech.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speech.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB3B524125BB1D6400030526 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB3B525225BB1D6500030526 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB3B525D25BB1D6500030526 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FB2CCA4A25C56ECE00916914 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FB2CCA4B25C56EE300916914 /* Preferences.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		FB3B523B25BB1D6400030526 = {
+			isa = PBXGroup;
+			children = (
+				FB3B524625BB1D6400030526 /* Hepburn */,
+				FB3B525825BB1D6500030526 /* HepburnTests */,
+				FB3B526325BB1D6500030526 /* HepburnUITests */,
+				FB3B524525BB1D6400030526 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FB3B524525BB1D6400030526 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB3B524425BB1D6400030526 /* Hepburn.app */,
+				FB3B525525BB1D6500030526 /* HepburnTests.xctest */,
+				FB3B526025BB1D6500030526 /* HepburnUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB3B524625BB1D6400030526 /* Hepburn */ = {
+			isa = PBXGroup;
+			children = (
+				FBF4356725CC1D77005AD969 /* Data */,
+				FB670F7825C6A0DE000798BF /* Network */,
+				FB2CCA4A25C56ECE00916914 /* Utils */,
+				FB972F4A25C1A1C30051833F /* Audio */,
+				FB96EDAC25BEF94E001F7025 /* Localizable.strings */,
+				FBB2105625BD461000CE94D5 /* Views */,
+				FB3B524725BB1D6400030526 /* HepburnApp.swift */,
+				FB3B524B25BB1D6500030526 /* Assets.xcassets */,
+				FB3B525025BB1D6500030526 /* Info.plist */,
+				FB3B524D25BB1D6500030526 /* Preview Content */,
+			);
+			path = Hepburn;
+			sourceTree = "<group>";
+		};
+		FB3B524D25BB1D6500030526 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FB3B524E25BB1D6500030526 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FB3B525825BB1D6500030526 /* HepburnTests */ = {
+			isa = PBXGroup;
+			children = (
+				FB3B525925BB1D6500030526 /* HepburnTests.swift */,
+				FB3B525B25BB1D6500030526 /* Info.plist */,
+			);
+			path = HepburnTests;
+			sourceTree = "<group>";
+		};
+		FB3B526325BB1D6500030526 /* HepburnUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FB3B526425BB1D6500030526 /* HepburnUITests.swift */,
+				FB3B526625BB1D6500030526 /* Info.plist */,
+			);
+			path = HepburnUITests;
+			sourceTree = "<group>";
+		};
+		FB670F7825C6A0DE000798BF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FB670F7925C6A0F2000798BF /* Network.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		FB972F4A25C1A1C30051833F /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				FB972F4025C18FB30051833F /* AudioRecorder.swift */,
+				FB972F4525C19F360051833F /* AudioPlayer.swift */,
+				FBF4357025CC26FB005AD969 /* Speech.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		FBB2105625BD461000CE94D5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FB3B524925BB1D6400030526 /* LoginView.swift */,
+				FBB2105125BD3FA900CE94D5 /* MainView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FBF4356725CC1D77005AD969 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FBF4356825CC1D8B005AD969 /* Talk.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB3B524325BB1D6400030526 /* Hepburn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB3B526925BB1D6500030526 /* Build configuration list for PBXNativeTarget "Hepburn" */;
+			buildPhases = (
+				FB3B524025BB1D6400030526 /* Sources */,
+				FB3B524125BB1D6400030526 /* Frameworks */,
+				FB3B524225BB1D6400030526 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hepburn;
+			productName = Hepburn;
+			productReference = FB3B524425BB1D6400030526 /* Hepburn.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FB3B525425BB1D6500030526 /* HepburnTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB3B526C25BB1D6500030526 /* Build configuration list for PBXNativeTarget "HepburnTests" */;
+			buildPhases = (
+				FB3B525125BB1D6500030526 /* Sources */,
+				FB3B525225BB1D6500030526 /* Frameworks */,
+				FB3B525325BB1D6500030526 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB3B525725BB1D6500030526 /* PBXTargetDependency */,
+			);
+			name = HepburnTests;
+			productName = HepburnTests;
+			productReference = FB3B525525BB1D6500030526 /* HepburnTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FB3B525F25BB1D6500030526 /* HepburnUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB3B526F25BB1D6500030526 /* Build configuration list for PBXNativeTarget "HepburnUITests" */;
+			buildPhases = (
+				FB3B525C25BB1D6500030526 /* Sources */,
+				FB3B525D25BB1D6500030526 /* Frameworks */,
+				FB3B525E25BB1D6500030526 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB3B526225BB1D6500030526 /* PBXTargetDependency */,
+			);
+			name = HepburnUITests;
+			productName = HepburnUITests;
+			productReference = FB3B526025BB1D6500030526 /* HepburnUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB3B523C25BB1D6400030526 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					FB3B524325BB1D6400030526 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					FB3B525425BB1D6500030526 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = FB3B524325BB1D6400030526;
+					};
+					FB3B525F25BB1D6500030526 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = FB3B524325BB1D6400030526;
+					};
+				};
+			};
+			buildConfigurationList = FB3B523F25BB1D6400030526 /* Build configuration list for PBXProject "Hepburn" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB3B523B25BB1D6400030526;
+			productRefGroup = FB3B524525BB1D6400030526 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB3B524325BB1D6400030526 /* Hepburn */,
+				FB3B525425BB1D6500030526 /* HepburnTests */,
+				FB3B525F25BB1D6500030526 /* HepburnUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB3B524225BB1D6400030526 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB3B524F25BB1D6500030526 /* Preview Assets.xcassets in Resources */,
+				FB96EDAA25BEF94E001F7025 /* Localizable.strings in Resources */,
+				FB3B524C25BB1D6500030526 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB3B525325BB1D6500030526 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB3B525E25BB1D6500030526 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB3B524025BB1D6400030526 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBF4357125CC26FB005AD969 /* Speech.swift in Sources */,
+				FB3B524A25BB1D6400030526 /* LoginView.swift in Sources */,
+				FBF4356925CC1D8B005AD969 /* Talk.swift in Sources */,
+				FBB2105225BD3FA900CE94D5 /* MainView.swift in Sources */,
+				FB2CCA4C25C56EE300916914 /* Preferences.swift in Sources */,
+				FB972F4625C19F360051833F /* AudioPlayer.swift in Sources */,
+				FB972F4125C18FB30051833F /* AudioRecorder.swift in Sources */,
+				FB670F7A25C6A0F2000798BF /* Network.swift in Sources */,
+				FB3B524825BB1D6400030526 /* HepburnApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB3B525125BB1D6500030526 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB3B525A25BB1D6500030526 /* HepburnTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB3B525C25BB1D6500030526 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB3B526525BB1D6500030526 /* HepburnUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FB3B525725BB1D6500030526 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB3B524325BB1D6400030526 /* Hepburn */;
+			targetProxy = FB3B525625BB1D6500030526 /* PBXContainerItemProxy */;
+		};
+		FB3B526225BB1D6500030526 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB3B524325BB1D6400030526 /* Hepburn */;
+			targetProxy = FB3B526125BB1D6500030526 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FB96EDAC25BEF94E001F7025 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB96EDAB25BEF94E001F7025 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FB3B526725BB1D6500030526 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FB3B526825BB1D6500030526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB3B526A25BB1D6500030526 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Hepburn/Preview Content\"";
+				DEVELOPMENT_TEAM = VJVRCJB7KL;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Hepburn/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = PocketWolf.Hepburn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FB3B526B25BB1D6500030526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Hepburn/Preview Content\"";
+				DEVELOPMENT_TEAM = VJVRCJB7KL;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Hepburn/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = PocketWolf.Hepburn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FB3B526D25BB1D6500030526 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HepburnTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = PocketWolf.HepburnTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hepburn.app/Hepburn";
+			};
+			name = Debug;
+		};
+		FB3B526E25BB1D6500030526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HepburnTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = PocketWolf.HepburnTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hepburn.app/Hepburn";
+			};
+			name = Release;
+		};
+		FB3B527025BB1D6500030526 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HepburnUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = PocketWolf.HepburnUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Hepburn;
+			};
+			name = Debug;
+		};
+		FB3B527125BB1D6500030526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HepburnUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = PocketWolf.HepburnUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Hepburn;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB3B523F25BB1D6400030526 /* Build configuration list for PBXProject "Hepburn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB3B526725BB1D6500030526 /* Debug */,
+				FB3B526825BB1D6500030526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB3B526925BB1D6500030526 /* Build configuration list for PBXNativeTarget "Hepburn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB3B526A25BB1D6500030526 /* Debug */,
+				FB3B526B25BB1D6500030526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB3B526C25BB1D6500030526 /* Build configuration list for PBXNativeTarget "HepburnTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB3B526D25BB1D6500030526 /* Debug */,
+				FB3B526E25BB1D6500030526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB3B526F25BB1D6500030526 /* Build configuration list for PBXNativeTarget "HepburnUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB3B527025BB1D6500030526 /* Debug */,
+				FB3B527125BB1D6500030526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FB3B523C25BB1D6400030526 /* Project object */;
+}

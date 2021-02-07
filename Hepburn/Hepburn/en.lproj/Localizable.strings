@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  Hepburn
+
+  Created by HyeonTae Cho on 2021/01/25.
+  
+*/
+"App Name" = "Hepburn";
+"Login" = "Login";
+"Start Recording" = "Start Recording";
+"Stop Recording" = "Stop Recording";
+"Input Server Address" = "Input server address";
+"Input Server Port" = "Input server port";
+"Input Text" = "Input text";
